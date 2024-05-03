@@ -19,21 +19,21 @@ all-features = true
 members = ["crates/*", "backends/*"]
 
 [dependencies]
-bevy_app = { version = "0.13", default-features = false }
-bevy_core = { version = "0.13", default-features = false }
-bevy_ecs = { version = "0.13", default-features = false }
-bevy_math = { version = "0.13", default-features = false }
-bevy_reflect = { version = "0.13", default-features = false }
-bevy_render = { version = "0.13", default-features = false }
-bevy_core_pipeline = { version = "0.13", optional = true, default-features = false }
-bevy_text = { version = "0.13", optional = true, default-features = false, features = [
+bevy_app = { git = "https://github.com/bevyengine/bevy.git",branch="main", default-features = false }
+bevy_core = { git = "https://github.com/bevyengine/bevy.git",branch="main", default-features = false }
+bevy_ecs = { git = "https://github.com/bevyengine/bevy.git",branch="main", default-features = false }
+bevy_math = { git = "https://github.com/bevyengine/bevy.git",branch="main", default-features = false }
+bevy_reflect = { git = "https://github.com/bevyengine/bevy.git",branch="main", default-features = false }
+bevy_render = { git = "https://github.com/bevyengine/bevy.git",branch="main", default-features = false }
+bevy_core_pipeline = { git = "https://github.com/bevyengine/bevy.git",branch="main", optional = true, default-features = false }
+bevy_text = { git = "https://github.com/bevyengine/bevy.git",branch="main", optional = true, default-features = false, features = [
     "default_font",
 ] }
-bevy_ui = { version = "0.13", optional = true, default-features = false }
-bevy_utils = { version = "0.13", default-features = false }
-bevy_window = { version = "0.13", default-features = false }
+bevy_ui = { git = "https://github.com/bevyengine/bevy.git",branch="main", optional = true, default-features = false }
+bevy_utils = { git = "https://github.com/bevyengine/bevy.git",branch="main", default-features = false }
+bevy_window = { git = "https://github.com/bevyengine/bevy.git",branch="main", default-features = false }
 
-bevy_eventlistener = "0.7"
+bevy_eventlistener = {git = "https://github.com/ycysdf/bevy_eventlistener.git",branch="main"}
 bevy_egui = { optional = true, version = "0.25" }
 bevy_rapier3d = { optional = true, version = "0.25" }
 bevy_xpbd_3d = { optional = true, version = "0.4" }
@@ -51,9 +51,10 @@ bevy_picking_egui = { optional = true, path = "backends/bevy_picking_egui", vers
 bevy_picking_xpbd = { optional = true, path = "backends/bevy_picking_xpbd", version = "0.18" }
 
 [dev-dependencies]
-bevy = { version = "0.13", default-features = false, features = [
+bevy = { git = "https://github.com/bevyengine/bevy.git",branch="main", default-features = false, features = [
     "bevy_winit",
     "x11",
+    "animation",
     "bevy_gltf",
     "bevy_scene",
     "bevy_ui",
