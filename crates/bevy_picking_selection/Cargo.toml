@@ -13,11 +13,11 @@ resolver = "2"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bevy_app = { git = "https://github.com/bevyengine/bevy.git",branch="main", default-features = false }
-bevy_ecs = { git = "https://github.com/bevyengine/bevy.git",branch="main", default-features = false }
-bevy_input = { git = "https://github.com/bevyengine/bevy.git",branch="main", default-features = false }
-bevy_reflect = { git = "https://github.com/bevyengine/bevy.git",branch="main", default-features = false }
-bevy_utils = { git = "https://github.com/bevyengine/bevy.git",branch="main", default-features = false }
+bevy_app = { git = "https://github.com/ycysdf/bevy.git",branch="main", default-features = false }
+bevy_ecs = { git = "https://github.com/ycysdf/bevy.git",branch="main", default-features = false }
+bevy_input = { git = "https://github.com/ycysdf/bevy.git",branch="main", default-features = false }
+bevy_reflect = { git = "https://github.com/ycysdf/bevy.git",branch="main", default-features = false }
+bevy_utils = { git = "https://github.com/ycysdf/bevy.git",branch="main", default-features = false }
 
 bevy_eventlistener = {git = "https://github.com/ycysdf/bevy_eventlistener.git",branch="main"}
 
